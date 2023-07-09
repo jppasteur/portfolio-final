@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <nav>
+        <div class="nav-item active-item">
+            <img src="./resources/home-icon.svg" alt="">
+        </div>
+
+        <div class="nav-item">
+            <img src="./resources/portfolio-icon.svg" alt="">
+        </div>
+
+        <div class="nav-item">
+            <img src="./resources/socials-icon.svg" alt="">
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <header>
+            <img class="home-hi" src="./resources/hi.png" alt="Hi image">
+            <div class="text-main-container">
+                <h1>
+                    I'm JP
+                </h1>
+                <h2>
+                    I do UI engineering, web developing and 3D design.
+                </h2>
+            </div>
+            <div class="home-portrait">
+                <img class="home-img" src="./resources/home-banner.png" alt="Greeting animation">
+            </div>
+        
+        </header>
+        <div class="work-section">
+            <h1 class="title-spacing">
+                Work
+            </h1>
+            <div class="work-card">
+                <div class="button-container">
+                    <button onclick="showImage(1)" class="active-button">Web</button>
+                    <button onclick="showImage(2)">Design</button>
+                    <button onclick="showImage(3)">3D</button>
+                    <button onclick="showImage(4)">Horizon</button>
+                </div>
+                <h2>
+                    I have developed a couple of tools to navigate the world of web design. 
+                    My expertise lies in project management, user experience and IT innovation.
+                </h2>
+
+                    <img id="image1" class="web-banner" src="./resources/web-banner.png" alt="web-banner">
+                    
+                    <div class="card-container">
+
+                        <div class="card" id="card1">
+                            <img class="project-image" src="./resources/web-card-test.png" alt="Image">
+                            <p class="card-text">web card test</p>
+                        </div>
+                        <div class="card" id="card4">
+                            <img class="project-image" src="./resources/design-card-test.png" alt="Image">
+                            <p class="card-text">design card test</p>
+                        </div>
+                        <div class="card" id="card7">
+                            <img class="project-image" src="./resources/3d-card-test.png" alt="Image">
+                            <p class="card-text">3d card test</p>
+                        </div>
+                        <div class="card" id="card10">
+                            <img class="project-image" src="./resources/horizon-card-test.png" alt="Image">
+                            <p class="card-text">3d card test</p>
+                        </div>
+
+                    </div>
+
+            </div>
+        </div>
+
+        <script>
+            function showImage(buttonNumber) {
+              var image = document.getElementById('image1');
+              var card1 = document.getElementById('card1');
+              var card4 = document.getElementById('card4');
+              var card7 = document.getElementById('card7');
+              var card10 = document.getElementById('card10');
+        
+              switch (buttonNumber) {
+                case 1:
+                  image.src = './resources/web-banner.png';
+                  card1.style.display = 'block';
+                  card4.style.display = 'none';
+                  card7.style.display = 'none';
+                  card10.style.display = 'none';
+                  break;
+                case 2:
+                  image.src = './resources/design-banner.PNG';
+                  card1.style.display = 'none';
+                  card4.style.display = 'block';
+                  card7.style.display = 'none';
+                  card10.style.display = 'none';
+                  break;
+                case 3:
+                  image.src = './resources/3d-banner.PNG';
+                  card1.style.display = 'none';
+                  card4.style.display = 'none';
+                  card7.style.display = 'block';
+                  card10.style.display = 'none';
+                  break;
+                case 4:
+                  image.src = './resources/horizon-banner.PNG';
+                  card1.style.display = 'none';
+                  card4.style.display = 'none';
+                  card7.style.display = 'none';
+                  card10.style.display = 'block';
+                  break;
+                default:
+                image.src = 'WORK-WEB-1.PNG';
+                  card1.style.display = 'block';
+                  card4.style.display = 'none';
+                  card7.style.display = 'none';
+                  card10.style.display = 'none';
+              }
+            }
+          </script>
+
+        <div class="socials-section"></div>
+            <h1 class="title-spacing">
+                Socials
+            </h1>
+            <div class="socials-card">
+                
+                <div class="spheres-container">
+                
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+                        <script>
+                        var scene = new THREE.Scene();
+                        scene.background = new THREE.Color(0xeeeeee);
+                        var frustumSize = 5;
+                        var aspect = window.innerWidth / window.innerHeight;
+                        var camera = new THREE.OrthographicCamera(
+                            frustumSize * aspect / -2,
+                            frustumSize * aspect / 2,
+                            frustumSize / 2,
+                            frustumSize / -2,
+                            0.1,
+                            1000
+                        );
+                        camera.position.z = 5;
+                        var renderer = new THREE.WebGLRenderer();
+                        renderer.setSize(window.innerWidth, window.innerHeight);
+                        document.body.appendChild(renderer.domElement);
+                        var textureLoader = new THREE.TextureLoader();
+                        var texture1 = textureLoader.load('./resources/testtest.png');
+                        var texture2 = textureLoader.load('./resources/testing-tex.jpg');
+                        var texture3 = textureLoader.load('./resources/testing-2-tex.png');
+                        var geometry = new THREE.SphereGeometry(0.5, 32, 32);
+                        var material1 = new THREE.MeshBasicMaterial({ map: texture1 });
+                        var material2 = new THREE.MeshBasicMaterial({ map: texture2 });
+                        var material3 = new THREE.MeshBasicMaterial({ map: texture3 });
+                        var sphere1 = new THREE.Mesh(geometry, material1);
+                        sphere1.position.x = -2.5;
+                        var sphere2 = new THREE.Mesh(geometry, material2);
+                        sphere2.position.x = 0;
+                        var sphere3 = new THREE.Mesh(geometry, material3);
+                        sphere3.position.x = 2.5;
+                        scene.add(sphere1, sphere2, sphere3);
+                        function animate() {
+                            requestAnimationFrame(animate);
+                            sphere1.rotation.x += 0.01;
+                            sphere1.rotation.y += 0.01;
+                            sphere2.rotation.x += 0.01;
+                            sphere2.rotation.y += 0.01;
+                            sphere3.rotation.x += 0.01;
+                            sphere3.rotation.y += 0.01;
+                            renderer.render(scene, camera);
+                        }
+                        animate();
+                    </script>
+                </div>    
+            </div>
+
+</body>
+</html>
