@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+
+<link rel="stylesheet" href="./Portfolio_files/style.css"></head>
+<body>
+    <nav>
+        <div class="nav-item active-item">
+            <img src="./Portfolio_files/home-icon.svg" alt="">
+        </div>
+
+        <div class="nav-item">
+            <img src="./Portfolio_files/portfolio-icon.svg" alt="">
+        </div>
+
+        <div class="nav-item">
+            <img src="./Portfolio_files/socials-icon.svg" alt="">
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <header>
+            <img class="home-hi" src="./Portfolio_files/hi.png" alt="Hi image">
+            <div class="text-main-container">
+                <h1>
+                    I'm JP
+                </h1>
+                <h2>
+                    I do UI engineering, web developing and 3D design.
+                </h2>
+            </div>
+            <div class="home-portrait">
+                <img class="home-img" src="./Portfolio_files/home-banner.png" alt="Greeting animation">
+            </div>
+        
+        </header>
+        <div class="work-section">
+            <h1>
+                Work
+            </h1>
+            <div class="work-card">
+                <div class="button-container">
+                    <button class="active-button">Web</button>
+                    <button>Design</button>
+                    <button>3D</button>
+                    <button>Horizon</button>
+                </div>
+                <h2>
+                    I have developed a couple of tools to navigate the world of web design. 
+                    My expertise lies in project management, user experience and IT innovation.
+                </h2>
+                <img class="web-banner" src="./Portfolio_files/WORK-WEB-1.png" alt="web-banner">
+                <div class="card-container">
+                    <div class="card">
+                        <img class="project-image" src="./Portfolio_files/carnalmx-banner.png" alt="Image">
+                        <p class="card-text">carnalmx.com</p>
+
+                    </div>
+                    <div class="card">
+                        <img class="project-image" src="./Portfolio_files/odyssey-banner.png" alt="Image">
+                        <p class="card-text">Odyssey2.0</p>
+                    </div>
+                    <div class="card">
+                        <img class="project-image" src="./Portfolio_files/atotonilco-banner.png" alt="Image">
+                        <p class="card-text">atotonilcoestudio.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="socials-section"></div>
+            <h1>
+                Socials
+            </h1>
+            <div class="socials-card">
+                
+                <div class="spheres-container">
+                
+                    <script src="./Portfolio_files/three.min.js.descarga"></script>
+                        <script>
+                        var scene = new THREE.Scene();
+                        scene.background = new THREE.Color(0xeeeeee);
+                        var frustumSize = 5;
+                        var aspect = window.innerWidth / window.innerHeight;
+                        var camera = new THREE.OrthographicCamera(
+                            frustumSize * aspect / -2,
+                            frustumSize * aspect / 2,
+                            frustumSize / 2,
+                            frustumSize / -2,
+                            0.1,
+                            1000
+                        );
+                        camera.position.z = 5;
+                        var renderer = new THREE.WebGLRenderer();
+                        renderer.setSize(window.innerWidth, window.innerHeight);
+                        document.body.appendChild(renderer.domElement);
+                        var textureLoader = new THREE.TextureLoader();
+                        var texture1 = textureLoader.load('./resources/testing-3-tex.jpg');
+                        var texture2 = textureLoader.load('./resources/testing-tex.jpg');
+                        var texture3 = textureLoader.load('./resources/testing-2-tex.png');
+                        var geometry = new THREE.SphereGeometry(0.5, 32, 32);
+                        var material1 = new THREE.MeshBasicMaterial({ map: texture1 });
+                        var material2 = new THREE.MeshBasicMaterial({ map: texture2 });
+                        var material3 = new THREE.MeshBasicMaterial({ map: texture3 });
+                        var sphere1 = new THREE.Mesh(geometry, material1);
+                        sphere1.position.x = -2.5;
+                        var sphere2 = new THREE.Mesh(geometry, material2);
+                        sphere2.position.x = 0;
+                        var sphere3 = new THREE.Mesh(geometry, material3);
+                        sphere3.position.x = 2.5;
+                        scene.add(sphere1, sphere2, sphere3);
+                        function animate() {
+                            requestAnimationFrame(animate);
+                            sphere1.rotation.x += 0.01;
+                            sphere1.rotation.y += 0.01;
+                            sphere2.rotation.x += 0.01;
+                            sphere2.rotation.y += 0.01;
+                            sphere3.rotation.x += 0.01;
+                            sphere3.rotation.y += 0.01;
+                            renderer.render(scene, camera);
+                        }
+                        animate();
+                    </script>
+                </div>    
+            </div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</div><canvas width="1115" height="649" style="width: 1115px; height: 649px;"></canvas></body></html>
