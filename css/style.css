@@ -143,10 +143,7 @@ button:hover {
 
 button {
     font-size: 24px;
-    /*
     width: 240px;
-    */
-    width: 25%;
     height: 68px;
     color: var(--grey-secondary);
     background-color: var(--grey-primary);
