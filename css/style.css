@@ -21,11 +21,11 @@ body {
 }
 
 .title-spacing {
-    margin: 48px 0;
+    margin: 4% 0;  
 }
 
 .main-container {
-    margin: 0 160px;
+    margin: 0 8%;
 }
 
 .home-portrait {
@@ -90,7 +90,7 @@ header {
     gap: 32px;
     align-items: center;
     justify-content: center;
-    margin-top: 64px;
+    margin-top: 8%;
     text-align: center;
 }
 
