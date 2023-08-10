@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <nav>
+        <a class="nav-btn" href="#home">
+        <div class="nav-item active-item">
+            <img src="./resources/home-icon.svg" alt=""> <p2>Home</p2>
+        </div>
+        </a>
+
+        <a class="nav-btn" href="#work">
+        <div class="nav-item">
+            <img src="./resources/portfolio-icon.svg" alt=""> <p2>Work</p2>
+        </div>
+        </a>
+
+        <a class="nav-btn" href="#socials">
+        <div class="nav-item">
+            <img src="./resources/socials-icon.svg" alt=""> <p2>Socials</p2>
+        </div>
+        </a>
+    </nav>
+
+    <div id="home" class="main-container">
+        <header>
+            <img class="home-hi" src="./resources/hi.png" alt="Hi image">
+            <div class="text-main-container">
+                <h3>
+                    I am J.P. Orduna
+                </h3>
+                <h4>
+                    I do web developing, UI engineering and 3D design.
+                </h4>
+            </div>
+            <div class="home-portrait">
+                <img class="home-img" src="./resources/home-banner.png" alt="Greeting animation">
+            </div>
+        
+        </header>
+
+        <div id="work" class="work-section">
+            <h1 class="title-spacing">
+                My Work
+            </h1>
+            <div class="work-card">
+                <div class="button-container">
+                    <button class="active" onclick="showImage(1)">Web</button>
+                    <button onclick="showImage(2)">Design</button>
+                    <button onclick="showImage(3)">3D</button>
+                    <button onclick="showImage(4)">Horizon</button>
+                </div>
+                <h2 id="text1">
+                    As a web-oriented designer, I have been able to develop and polish a different set of 
+                    tools that have guided me through my projects, helping me achieve new grounds.
+                    <br>
+
+                    <br>
+                    I've acquired a detailed understanding of the web design process, from ideation to    
+                    launch. I also have explored new technologies to accomplish various projects.
+                    <br>
+
+                    <br>
+                    The projects I have under my belt have helped me gain an expertise in my field, 
+                    all with the single purpose of bringing a seamless experience to any web format.
+                </h2>
+
+                <h2 id="text4">
+                    As a UI engineer, I pursue perfection with every project, aiming to create 
+                    a congruent and meaningful visual identity that conveys the correct message.
+                    <br>
+
+                    <br>
+                    Throughout my career, I have developed robust design systems  that encompass all 
+                   the UI specifications of a website, from concept to code implementation.
+                    <br>
+
+                    <br>
+                    I am constantly learning and expanding my abilities, with a 
+                    particular proficiency in creating design systems, UI kits, and brand identities.
+                </h2>
+
+                <h2 id="text7">
+                    As a 3D artist, I boast a diverse background, ranging from highly creative projects 
+                    like music videos to business-oriented websites that incorporate 3D elements.
+                    <br>
+
+                    <br>
+                    Throughout my career, I have successfully reconciled my unique visual style across 
+                    various platforms, including videos, GIFs, and interactive 3D objects for web.
+                    <br>
+
+                    <br>
+                    This diverse background has provided me with a clear understanding of specific tools 
+                    such as photogrammetry, 3D modeling, animation, and coding in three.js.
+                </h2>
+
+                <h2 id="text10">
+                    As web-oriented designers and developers, it is our duty to consistently incorporate 
+                    fresh technologies and ideas into our work. This has been the driving force behind my career.
+                    <br>
+
+                    <br>
+                    By staying at the vanguard of innovation, we can provide a technological edge that many older 
+                    websites lack. This differentiation can transform a last-generation website into a highly modernized one.
+                    <br>
+
+                    <br>
+                    I have achieved significant success with modern technologies, including interactive three.js elements, 
+                    designing AR and VR experiences, as well as exploring photogrammetry and 3D printing.
+                </h2>
+
+                    
+                    
+                    <div class="card-container">
+
+                        <!--WEB CARDS-->
+
+                        <a href="web.html" class="card" id="card1">
+                            <img class="project-image" src="./resources/carnal-web-card.png" alt="Image">
+                            <p class="card-text">Carnal</p>
+                        </a>
+                        <a href="web.html" class="card" id="card2">
+                            <img class="project-image" src="./resources/odyssey-web-card.png" alt="Image">
+                            <p class="card-text">Odyssey 2.0</p>
+                        </a>
+                        <a href="web.html" class="card" id="card3">
+                            <img class="project-image" src="./resources/atotonilco-web-card.png" alt="Image">
+                            <p class="card-text">Atotonilco</p>
+                        </a>
+
+                        <!--DESIGN CARDS-->
+
+                        
+                        <a href="design.html" class="card" id="card4">
+                            <img class="project-image" src="./resources/odyssey-design-card.png" alt="Image">
+                            <p class="card-text">Odyssey2.0</p>
+                        </a>
+                        <a href="design.html" class="card" id="card5">
+                            <img class="project-image" src="./resources/droneiq-design-card.png" alt="Image">
+                            <p class="card-text">DroneIQ</p>
+                        </a>
+                        <a href="design.html" class="card" id="card6">
+                            <img class="project-image" src="./resources/reestrenon-design-card.png" alt="Image">
+                            <p class="card-text">Re Estrenon</p>
+                        </a>
+
+                        <!--3D CARDS-->
+
+                        <a href="3D.html" class="card" id="card7">
+                            <img class="project-image" src="./resources/zen-3d-card.png" alt="Image">
+                            <p class="card-text">Zentiago</p>
+                        </a>
+                        <a href="3D.html" class="card" id="card8">
+                            <img class="project-image" src="./resources/cherryroma-3d-card.png" alt="Image">
+                            <p class="card-text">Cherry Roma</p>
+                        </a>
+                        <a href="3d.html" class="card" id="card9">
+                            <img class="project-image" src="./resources/tajyn-3d-card.png" alt="Image">
+                            <p class="card-text">Tajyn</p>
+                        </a>
+
+                        <!--HORIZON CARDS-->
+
+                        <a href="horizon.html" class="card" id="card10">
+                            <img class="project-image" src="./resources/carnal-horizon-card.png" alt="Image">
+                            <p class="card-text">Carnal</p>
+                        </a>
+                        <a href="horizon.html" class="card" id="card11">
+                            <img class="project-image" src="./resources/ultrap-horizon-card.png" alt="Image">
+                            <p class="card-text">Ultra P</p>
+                        </a>
+                        <a href="horizon.html" class="card" id="card12">
+                            <img class="project-image" src="./resources/cherryroma-horizon-card.png" alt="Image">
+                            <p class="card-text">Cherry Roma</p>
+                        </a>
+
+                    </div>
+
+            </div>
+
+        </div>
+
+        <script src="script.js"> </script>
+
+        <div id="socials" class="socials-section">
+            
+            <h1 class="title-spacing">
+                Get in touch!
+            </h1>
+
+            <div class="socials-card">
+                
+                <div class="spheres-container">
+
+                    <a href="https://www.instagram.com/juanpablopasteur/" class="social-card" id="social-card" target="_blank">
+                        <img class="project-image" src="./resources/instagram.gif" alt="Image">
+                        <p class="card-text">Instagram</p>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/j-p-orduna-2a08171b3/" class="social-card" id="social-card" target="_blank">
+                        <img class="project-image" src="./resources/linkedin.gif" alt="Image">
+                        <p class="card-text">LinkedIn</p>
+                    </a>
+
+                    <a href="https://www.behance.net/juanordua" class="social-card" id="social-card" target="_blank">
+                        <img class="project-image" src="./resources/behance.gif" alt="Image">
+                        <p class="card-text">Behance</p>
+                    </a>
+
+                </div>    
+
+            </div>
+
+        </div>
+
+</body>
+
+</html>

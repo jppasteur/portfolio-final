@@ -1,0 +1,260 @@
+:root {
+    --grey-primary: #EEEEEE;
+    --active-primary: #007AFF;
+    --grey-secondary: #414042;
+    --grey-tertiary: #F8F8F8;
+    --white: #ffffff;
+}
+
+html { 
+    scroll-behavior: smooth;
+}
+
+*, body {
+    box-sizing: border-box;
+    font-family: 'HelveticaNeue', Arial, sans-serif;
+      font-size: 400;
+}
+
+body {
+    background-color: var(--grey-primary);
+}
+
+.example::-webkit-scrollbar {
+    display: none;
+  }
+
+  .example {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+p {
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--grey-secondary);
+}
+
+.back {
+    color: var(--active-primary);
+    margin-left: 4%;
+}
+
+.title-spacing {
+    margin: 48px 80px;
+}
+
+a {
+    color: var(--grey-secondary);
+    text-decoration: none;
+}
+
+.home-portrait {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-img {
+    object-fit: fill;
+    width: 780px;
+}
+
+h4 {
+    margin-top: 48px;
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--active-primary);
+    text-decoration: underline;
+}
+
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 48px 0;
+    color: var(--grey-secondary);
+}
+
+h2 {
+    text-align: justify;
+    margin: 0 16%;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--grey-secondary);
+    /*
+    text-justify: inter-character; */
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 32px;
+    color: var(--grey-secondary);
+}
+
+nav {
+    width: fit-content;
+    position: fixed;
+    left: 4%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.nav-item {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 40px 8px 16px;
+    background-color: var(--grey-primary);
+    border-radius: 8px 0px 0px 8px;
+}
+
+.nav-icon {
+    width: 32px;
+}
+
+.active-item {
+    background-color: var(--active-primary);
+}
+
+.active {
+    color: var(--active-primary);
+    background-color: var(--white);
+}
+
+/*
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 64px;
+    text-align: center;
+}
+
+*/
+
+.work-card {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    background-color: var(--grey-tertiary);
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 15px 3px rgb(223, 233, 236);
+    padding-top: 32px;
+}
+
+.web-banner:hover {
+    filter: brightness(70%);
+}
+
+.web-banner {
+    max-width: 974px;
+    border-radius: 8px;
+}
+
+.web-banner-nohover {
+    max-width: 974px;
+    border-radius: 8px;
+}
+
+.socials-card {
+    align-items: center;
+    justify-content: center;
+    margin: 0 8%;
+}
+
+button:hover {
+    background-color: grey;
+    color: var(--white);
+}
+
+/* TEST FOR ACTIVE STATE
+.btn:active {
+    color: var(--active-primary);
+    background-color: var(--white);
+}
+*/
+
+button {
+    font-size: 24px;
+    width: 240px;
+    height: 68px;
+    color: var(--grey-secondary);
+    background-color: var(--grey-primary);
+    border-color: var(--grey-primary);
+    border-style: solid;
+}
+
+.card-container {
+    display: flex;
+    color: var(--grey-secondary);
+    margin-bottom: 32px;
+    font-size: 20px;
+    border-radius: 8px;
+    gap: 44px;
+}
+
+.project-image:hover {
+    filter: brightness(70%);
+}
+
+.card-text {
+    /* border-radius: 0px 0px 8px 8px; */
+    margin: 0;
+    padding-top: 8px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.card:hover {
+    background-color: grey;
+    color: var(--white);
+}
+
+.card {
+    background-color: var(--white);
+    border: var(--grey-primary) 2px solid;
+    border-radius: 8px;
+}
+
+.project-image {
+    border-bottom: var(--grey-primary) 2px solid;
+    width: 100%;
+    /* border: red 2px solid;
+    border-radius: 8px 8px 0px 0px; */
+}
+
+.spheres-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13%;
+    margin: 20%;
+    width: 60%
+    
+}
+
+.spline-container {
+    display: flex;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+

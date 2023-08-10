@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/work.css">
+    
+</head>
+
+<body>
+
+    <nav>
+        <a class="nav-btn" href="index.html">
+       <h4>Go back</h4>
+        </a>
+    </nav>
+
+    <div id="work" class="work-section">
+
+        <h3>Web Projects</h3>
+
+        <div class="work-card"> 
+            <div class="button-container">
+                <button class="active" onclick="showImage(1)">Carnal</button>
+                <button onclick="showImage(2)">Odyssey 2.0</button>
+                <button onclick="showImage(3)">Atotonilco</button>
+            </div>
+
+            <h1 id="title1">
+                Carnal
+            </h1>
+
+            <h2 id="text1">
+                'Carnal' is a robust project, featuring audio interviews accompanied by a photo of each 
+                interviewee's hand. 
+                <br>
+
+                <br>
+                The endeavor presented a couple of challenges. Firstly, automating the upload process for 
+                the client's desired thousand interviews proved essential. To achieve this, we developed 
+                an exclusive client-accessible internal database, allowing them to add, edit, or delete 
+                interviews seamlessly.
+                <br>
+
+                <br>
+                This meant creating a whole another website from scratch: the necessities and requirements of
+                this database were not the same as for the main website. I opted for a very elegant and minimalist 
+                look to avoid creating any unnecesary confusions to our client.
+                <br>
+
+                <br>
+                Another major challenge was implementing a 3D interface for the homepage, as per the client's 
+                request. Leveraging 'three.js', we successfully crafted a dynamic menu enabling users to select 
+                their preferred interview for viewing.
+                <br>
+
+                <br>
+                This interface was rotable on all axes and had zoom-in and zoom-out. This was the most challenging
+                part because we had to balance this very modern approach and digest it down so it would be simple 
+                enough for any person to know how to interact with it.
+                <br>
+
+                <br>
+                Throughout the development process, my focus on user experience and effective communication with 
+                our client allowed us to create a remarkable website that met their specific needs.
+            </h2>
+
+            <a href="https://www.carnalmx.com" target="_blank">
+            <img id="image1" class="web-banner" src="./resources/carnal-web.png" alt="web image">
+            </a>
+
+            
+
+            <h1 id="title2">
+                Odyssey 2.0
+            </h1>
+
+            <h2 id="text2">
+                Odyssey is a highly technical MIS designed to manage printing resources where I assumed the role of 
+                a UI engineer.
+                <br>
+
+                <br>
+                The initial hurdle was enhancing the website's visual friendliness. Given its technical nature, creating 
+                a more accessible interface was crucial to balance the complexity of navigation. We tackled this by developing 
+                an in-house UI kit that we later scaled up into a comprehensive design system.
+                <br>
+
+                <br>
+                In this role, collaborating closely with the front-end team was essential to ensure that the custom-made interactions 
+                in the original design were accurately deployed on the website. Working hand in hand, we successfully brought the 
+                intended design to life, offering a seamless and engaging user experience.
+                <br>
+
+                <br>
+                To further enhance the website's visual appeal and cater to our specific demographic, we embarked on the initiative of 
+                redesigning the entire color scheme. Taking into account user feedback regarding legibility issues, we prioritized user 
+                experience and ran each color through a contrast checker. 
+                <br>
+
+                <br>
+                This undertaking represents the largest project I have been involved in, with a collaborative effort between 
+                a sum of three teams that amounted to up to fifteen people, all working together to create a cutting-edge MIS tailored for 
+                the North American printing sector.
+                <br>
+
+                <br>
+                The combination of custom-made interactions, a carefully curated icon catalogue, and an improved color scheme resulted in a 
+                website that delighted users and effectively communicated the brand's identity to its demographic.
+            </h2>
+            
+            <img id="image2" class="web-banner-nohover" src="./resources/odyssey-web.png" alt="web image">
+
+            <h1 id="title3">
+                Atotonilco
+            </h1>
+
+            <h2 id="text3">
+                I had the opportunity to work for the film studio Atotonilco, where I undertook the task of creating their 
+                web identity from scratch. 
+                <br>
+
+                <br>
+                In this role, I served as both a project manager and product designer. This required effective communication 
+                skills to convey the technical capabilities of the development team to the client and the other way around. Moreover, 
+                it was essential to make the website organized and elegant, to appeal to potential investors and donors.
+
+                <br>
+
+                <br>
+                Throughout this project, I successfully navigated the complexities of managing communication and expectations between 
+                the various stakeholders, resulting in a compelling and functional web platform that met the film studio's needs and 
+                aspirations.
+                <br>
+
+                <br>
+                In preparation for creating the visual identity, I conducted interviews with potential investors, film industry professionals, 
+                and shareholders. These insights allowed me to establish the key characteristics of the brand's visual identity to further map
+                out the demographic and developed a set of user personas, providing a solid foundation for the design process.
+                <br>
+
+                <br>
+                Once the research phase was complete, I began the ideation stage, focusing on crafting a color scheme, icon catalogue, and website 
+                mockups. All these elements needed to complement each other seamlessly and align with the company's vision of delivering a modern 
+                and minimalist experience.
+
+                <br>
+
+                <br>
+                The result was a brand image that communicated the company's values, attracted investors, and resonated with the film industry professionals, 
+                ultimately contributing to the success and growth of the business.
+            </h2>
+
+            <a href="https://www.atotonilcoestudio.com" target="_blank">
+            <img id="image3" class="web-banner" src="./resources/atotonilco-web.png" alt="web image">
+            </a>
+
+            <script src="work.js"> </script>
+
+        </div>
+
+        <div id="socials" class="socials-section">
+
+            <div class="socials-card">
+                
+                <div class="spheres-container">
+                    <a href="https://www.instagram.com/juanpablopasteur/" class="social-card" id="social-card" target="_blank">
+                        <img class="project-image" src="./resources/instagram.gif" alt="Image">
+                        <p class="card-text">Instagram</p>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/j-p-orduna-2a08171b3/" class="social-card" id="social-card" target="_blank">
+                        <img class="project-image" src="./resources/linkedin.gif" alt="Image">
+                        <p class="card-text">LinkedIn</p>
+                    </a>
+
+                    <a href="https://www.behance.net/juanordua" class="social-card" id="social-card" target="_blank">
+                        <img class="project-image" src="./resources/behance.gif" alt="Image">
+                        <p class="card-text">Behance</p>
+                    </a>
+                </div>    
+
+            </div>
+
+        </div>
