@@ -254,6 +254,7 @@ button {
     
     body {
         background-color: var(--grey-primary);
+        margin-top: 24%;
     }
     
     a {
@@ -426,8 +427,7 @@ button {
     }
     
     .social-card {
-        background-color: var(--active-primary);
-        
+        background-color: var(--grey-primary);        
     }
     
     .spheres-container {
