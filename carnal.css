@@ -245,6 +245,10 @@ button {
   width: 50%;
 }
 
+.image2{
+    display: none;
+ }
+
   /* phone */
   @media (max-width: 750px) {
       
@@ -256,6 +260,7 @@ button {
     
     body {
         background-color: var(--grey-primary);
+        margin-top: 8%;
     }
       
       p {
@@ -329,15 +334,15 @@ button {
           color: var(--grey-secondary);
       }
       
-      nav {
-          width: fit-content;
-          position: fixed;
-          left: 4%;
-          top: 0;
-          display: flex;
-          flex-direction: column;
-          gap: 32px;
-      }
+  nav {
+    width: fit-content;
+    position: fixed;
+    left: 4%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
       
       .active-item {
           background-color: var(--active-primary);
@@ -384,12 +389,13 @@ button {
       }
       
       .web-banner {
-          max-width: 100px;
+          max-width: 460px;
           border-radius: 8px;
+          
       }
       
       .web-banner-nohover {
-          max-width: 100px;
+          max-width: 460px;
           border-radius: 8px;
       }
       
@@ -476,6 +482,15 @@ button {
         justify-content: center;
         align-items: center;
         width: 50%;
+      }
+
+      .text1{
+        display: none;
+      }
+   
+      .image2{
+        display: block;
+        margin-top: 56px;
       }
 
   }
