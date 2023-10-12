@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding: 120px 160px 0px 160px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 72px;
+    /*
+    background: url(./resources/backdrop.png), lightgray 50% / cover no-repeat; */
+    background: #fff;
+    
+}
+
+header {
+    display: flex;
+    padding: 32px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 72px;
+    align-self: stretch;
+    border-radius: 8px;
+    background: var(--gradient-3, linear-gradient(0deg, rgba(5, 15, 217, 0.10) 0%, rgba(5, 15, 217, 0.08) 1.1%, rgba(5, 15, 217, 0.07) 2.42%, rgba(5, 15, 217, 0.05) 4.48%, rgba(5, 15, 217, 0.00) 31.73%));
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+}
+
+.title {
+    display: flex;
+    width: 740px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+
+h1 {
+    align-self: stretch; 
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.92px;
+    background: linear-gradient(90deg, #000 0%, #050FD9 56.08%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    align-self: stretch;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    letter-spacing: -0.96px;
+}
+
+.tool-text {
+    align-self: stretch;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.48px;
+}
+
+.tool-section {
+    display: flex;
+    width: 740px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.tool-bar {
+    display: flex;
+    padding: 0px 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.tool {
+    display: flex;
+    width: 70px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.tool-title {
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 590;
+    line-height: normal;
+    letter-spacing: -0.48px;
+}
+
+.header-img {
+width: 271.671px;
+height: 249px;
+flex-shrink: 0;
+object-fit: cover;
+}
+
+.tool-img {
+    max-width: 48px;
+}
+
+.work-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 14px;
+    align-self: stretch;
+}
+
+.work-title {
+    font-weight: 700;
+    
+}
+
+.work-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.work-card {
+    display: flex;
+    padding: 24px 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    flex: 1 0 0;
+    
+}
+
+.work-card:hover { 
+    display: flex;
+    padding: 24px 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    flex: 1 0 0;
+    border-radius: 8px;
+    background: linear-gradient(0deg, rgba(5, 15, 217, 0.20) 0%, rgba(5, 15, 217, 0.17) 2.4%, rgba(5, 15, 217, 0.14) 5.28%, rgba(5, 15, 217, 0.10) 9.76%, rgba(5, 15, 217, 0.00) 69.17%);
+  }
+
+.work-card-title {
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.64px;
+}
+
+.work-card-role {
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.48px;
+}
+
+.work-card-description {
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    letter-spacing: -0.48px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: stretch;
+}
+
+.footer-text {
+    color: #000;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 510;
+    line-height: normal;
+    letter-spacing: -0.24px;
+}
+
+.footer-text-link {
+    color: #050FD9;
+text-align: center;
+font-size: 12px;
+font-style: normal;
+font-weight: 510;
+line-height: normal;
+letter-spacing: -0.24px;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    padding: 24px 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    flex: 1 0 0;
+  }
