@@ -12,7 +12,7 @@ body {
     gap: 72px;
     /*
     background: url(./resources/backdrop.png), lightgray 50% / cover no-repeat; */
-    background: #fff;
+    background: #F5F6F9;
     
 }
 
@@ -33,11 +33,12 @@ header {
     justify-content: flex-end;
     align-items: center;
     gap: 32px;
+    width: 100%;
 }
 
 .title {
     display: flex;
-    width: 740px;
+    width: 100%;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
@@ -45,6 +46,7 @@ header {
 }
 
 h1 {
+    text-align: justify;
     align-self: stretch; 
     font-size: 30px;
     font-style: normal;
@@ -65,6 +67,7 @@ h2 {
     font-weight: 100;
     line-height: normal;
     letter-spacing: -0.96px;
+    text-align: justify;
 }
 
 .tool-text {
@@ -80,7 +83,8 @@ h2 {
 
 .tool-section {
     display: flex;
-    width: 740px;
+    padding: 0px auto;
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
@@ -88,10 +92,10 @@ h2 {
 
 .tool-bar {
     display: flex;
-    padding: 0px 40px;
     justify-content: space-between;
     align-items: flex-start;
     align-self: stretch;
+    gap: 16%
 }
 
 .tool {
@@ -146,10 +150,12 @@ object-fit: cover;
 }
 
 .work-card {
+    background-color: #fff;
     display: flex;
     padding: 24px 32px;
     flex-direction: column;
     align-items: center;
+    border-radius: 12px;
     gap: 12px;
     flex: 1 0 0;
     
@@ -162,7 +168,7 @@ object-fit: cover;
     align-items: center;
     gap: 12px;
     flex: 1 0 0;
-    border-radius: 8px;
+    border-radius: 12px;
     background: linear-gradient(0deg, rgba(5, 15, 217, 0.20) 0%, rgba(5, 15, 217, 0.17) 2.4%, rgba(5, 15, 217, 0.14) 5.28%, rgba(5, 15, 217, 0.10) 9.76%, rgba(5, 15, 217, 0.00) 69.17%);
   }
 
@@ -232,3 +238,4 @@ a {
     gap: 12px;
     flex: 1 0 0;
   }
+  
