@@ -273,7 +273,7 @@ footer {
     body {
         display: flex;
         width: auto;
-        padding: 120px 100px 0px 100px;
+        padding: 120px 80px 0px 80px;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
@@ -498,7 +498,7 @@ footer {
     
     body {
         display: flex;
-        width: auto;
+        width: 390;
         padding: 120px 32px 0px 32px;
         flex-direction: column;
         align-items: center;
