@@ -79,6 +79,33 @@ nav {
   background: var(--white, #FFF);
 }
 
+.nav-item-bar #myLinks {
+  display: none;
+}
+
+.nav-item-bar a {
+  font-family: sans-serif;
+  font-weight: 400;
+  color: var(--orange);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.nav-item-bar a.icon {
+  background: white;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
 .nav-item-bar {
   display: flex;
   justify-content: center;
@@ -89,6 +116,10 @@ nav {
 .nav-logo {
   width: 24px;
   height: 22px;
+}
+
+.nav-logo-hamburger {
+  display: none;
 }
 
 .nav-item-text {
@@ -368,7 +399,27 @@ footer {
 
 @media (max-width: 500px) { 
 
+  nav {
+    padding: 16px 40px;
+  }
+  
+  .nav-logo {
+    display: none;
+  }
+
+  .nav-logo-hamburger {
+    display: block;
+  }
+
+  .nav-item-bar a.icon {
+    display: block;
+  }
+
   .nav-item-text {
+    display: none;
+  }
+
+  .nav-socials-bar {
     display: none;
   }
 
