@@ -340,6 +340,10 @@ footer {
 }
 
 @media (max-width: 1050px) { 
+  
+  nav {
+    padding: 40px;
+  }
 
   header {
     padding: 40px;
@@ -363,10 +367,6 @@ footer {
 }
 
 @media (max-width: 500px) { 
-
-  nav {
-    padding: 40px;
-  }
 
   .nav-item-text {
     display: none;
