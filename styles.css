@@ -220,7 +220,7 @@ header {
 
 .tool-section {
   display: flex;
-  padding: 72px 240px;
+  padding: 40px 240px;
   justify-content: center;
   align-items: center;
   align-self: stretch;
@@ -260,12 +260,12 @@ header {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  filter: opacity(0.8);
+  filter: opacity(0.5);
 }
 
 .tool-text {
   color: var(--blue);
-  filter: opacity(0.8);
+  filter: opacity(0.5);
   text-align: center;
 }
 
@@ -501,6 +501,18 @@ footer {
     padding: 56px 32px;
   }
 
+  .project-title {
+    text-align: center;
+  }
+  .project-subtitle {
+    text-align: center;
+  }
+  
+  a, .project-redirect {
+    align-self: stretch;
+    text-align: center;
+  }
+
   .nav-item-icon {
     display: none;
   }
@@ -522,15 +534,21 @@ footer {
   }
 
   header {
-    padding: 80px 32px;
+    padding: 56px 32px;
   }
   
   .tool-section {
-    padding: 56px 32px;
+    padding: 32px 32px;
+  }
+
+  .tool-icon {
+    width: 20px;
+    height: 20  px;
+    padding: 4px 8px;
   }
 
   .project-section {
-    padding: 72px 32px;
+    padding: 40px 32px;
     flex-direction: column;
     gap: 32px;
   }
@@ -554,8 +572,8 @@ align-self: stretch;
   }
 
   .work-section {
-padding: 72px 16px;
-gap: 80px;
+padding: 16px 16px;
+gap: 40px;
   }
 
   .work-section-title {
