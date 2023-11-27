@@ -75,7 +75,6 @@ a:hover {
 
 body {
   height: auto;
-  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -488,6 +487,11 @@ footer {
 
 @media (max-width: 500px) { 
 
+  .project-redirect-section {
+    
+    padding: 56px 32px;
+  }
+
   .nav-item-icon {
     display: none;
   }
@@ -509,27 +513,27 @@ footer {
   }
 
   header {
-    padding: 80px 24px;
+    padding: 80px 32px;
   }
   
   .tool-section {
-    padding: 56px 24px;
+    padding: 56px 32px;
   }
 
   .project-section {
-    padding: 72px 24px;
+    padding: 72px 32px;
     flex-direction: column;
     gap: 32px;
   }
 
   .footer-tool-section {
     display: flex;
-    padding: 80px 24px;
+    padding: 80px 32px;
     gap: 72px;
   }
 
   footer {
-padding: 12px 24px;
+padding: 12px 32px;
 flex-direction: column;
 align-items: flex-start;
 gap: 16px;
