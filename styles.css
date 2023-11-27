@@ -215,6 +215,7 @@ header {
   align-self: stretch;
   color: var(--black);
   text-align: center;
+  padding: 0px 85px;
 }
 
 .tool-section {
@@ -407,7 +408,7 @@ footer {
 }
 
 .work-card:hover {
-  background-color: var(--orangelight);
+  background-color: #E1E1E1;
 }
 
 .work-card-text {
@@ -468,6 +469,10 @@ footer {
     padding: 80px 120px;
   }
 
+  .header-subtitle {
+    padding: 0px 0px;
+  }
+
   .tool-section {
     padding: 80px 120px;
   }
@@ -486,6 +491,10 @@ footer {
 }
 
 @media (max-width: 500px) { 
+
+  .header-subtitle {
+    padding: 0px 0px;
+  }
 
   .project-redirect-section {
     
