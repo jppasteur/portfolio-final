@@ -1,6 +1,34 @@
 @font-face {
-  font-family: 'sf';
-  src: local('SF Pro Display Regular'), url(resources/sf-pro.otf) format('otf');
+  font-family: 'SF Pro Display Regular';
+  src: local('SF Pro Display Regular'), url(resources/SF-Pro-Display-Regular.otf) format('otf');
+}
+
+@font-face {
+  font-family: 'SF Pro Display Medium';
+  src: local('SF Pro Display Medium'), url(resources/SF-Pro-Rounded-Medium.otf) format('otf');
+}
+
+@font-face {
+  font-family: 'SF Pro Display Semibold';
+  src: local('SF Pro Display Semibold'), url(resources/SF-Pro-Display-Semibold.otf) format('otf');
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    
+    color: var(--blue);
+  }
+
+  70% {
+    
+    color: var(--black);
+  }
+
+  100% {
+    
+    color: var(--blue);
+  }
+  
 }
 
 :root {
@@ -19,7 +47,7 @@
 }
 
 h1 {
-font-family: 'sf', sans-serif;
+font-family: 'SF Pro Display Regular', sans-serif;
 font-size: 56px;
 font-style: normal;
 font-weight: 400;
@@ -28,7 +56,7 @@ letter-spacing: -4.8px;
 }
 
 h2 {
-font-family: 'sf', sans-serif;
+font-family: 'SF Pro Display Regular', sans-serif;
 font-size: 32px;
 font-style: normal;
 font-weight: 400;
@@ -37,7 +65,7 @@ letter-spacing: -1.6px;
 }
 
 h3 {
-  font-family: 'sf', sans-serif;
+  font-family: 'SF Pro Display Regular', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -46,7 +74,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'sf', sans-serif;
+  font-family: 'SF Pro Display Regular', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -55,7 +83,7 @@ h4 {
 }
 
 p {
-  font-family: 'sf', sans-serif;
+  font-family: 'SF Pro Display Regular', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -89,6 +117,7 @@ nav {
   align-self: stretch;
   background: var(--white, #FFF);
   box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.05);
+ 
 }
 
 .nav-item-bar #myLinks {
@@ -107,6 +136,7 @@ nav {
 }
 
 .hamburger-bar-text {
+  font-family: 'SF Pro Display Semibold', sans-serif;
   color: var(--blue, #3155A0);
   font-weight: 590;
   letter-spacing: -0.64px;
@@ -150,7 +180,7 @@ nav {
   font-weight: 590;
   letter-spacing: -0.64px;
   transition: 0.5s;
-  font-family: sans-serif;
+  font-family: 'SF Pro Display Semibold', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -168,7 +198,7 @@ nav {
   font-weight: 590;
   letter-spacing: -0.64px;
   transition: 0.5s;
-  font-family: sans-serif;
+  font-family: 'SF Pro Display Semibold', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -201,7 +231,7 @@ nav {
 
 header {
   display: flex;
-  padding: 72px 240px;
+  padding: 72px 0px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -228,11 +258,24 @@ header {
   text-align: center;
 }
 
+.header-subtitle-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6px;
+}
+
 .header-subtitle {
-  align-self: stretch;
-  color: var(--black);
+  color: var(--black, #252525);
   text-align: center;
-  padding: 0px 85px;
+}
+
+.header-subtitle-accent {
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  color: var(--orange);
+  text-align: center;
+  font-weight: bold;
+  -webkit-animation:colorchange 2s infinite alternate;
 }
 
 .tool-section {
@@ -284,6 +327,7 @@ header {
   color: var(--blue);
   filter: opacity(0.5);
   text-align: center;
+  font-family: 'SF Pro Display Semibold', sans-serif;
 }
 
 .project-section {
@@ -323,15 +367,18 @@ header {
 }
 
 .project-redirect {
+  font-family: 'SF Pro Display Semibold', sans-serif;
   align-self: stretch;
   color: var(--blue);
   font-weight: 590;
   letter-spacing: -0.64px;
+  filter: opacity(0.5);
   transition: 0.5s;
 }
 
 .project-redirect:hover {
   color: var(--orange);
+  filter: opacity(1);
   
 }
 
@@ -385,6 +432,7 @@ footer {
   text-align: center;
   font-weight: 590;
   letter-spacing: -0.64px;
+  font-family: 'SF Pro Display Semibold', sans-serif;
 }
 
 .work-section {
@@ -467,13 +515,13 @@ footer {
 
 .project-redirect-section-title {
   align-self: stretch;
-  color: var(--orange);
+  color: var(--blue);
   text-align: center;
   transition: 0.5s;
 }
 
 .project-redirect-section-title:hover {
-  color: var(--blue);
+  color: var(--orange);
 }
 
 .project-redirect-section-img {
@@ -484,7 +532,7 @@ footer {
 
 @media (max-width: 1000px) { 
   header {
-    padding: 80px 120px;
+    padding: 80px 32px;
   }
 
   .header-subtitle {
@@ -505,6 +553,15 @@ footer {
 
   .work-section {
     padding: 40px 120px;
+  }
+}
+
+@media (max-width: 800px) { 
+  .header-subtitle-container {
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 4px;
   }
 }
 
@@ -552,7 +609,7 @@ footer {
   }
 
   header {
-    padding: 56px 32px;
+    padding: 56px 40px;
   }
   
   .tool-section {
@@ -569,6 +626,10 @@ footer {
     padding: 40px 32px;
     flex-direction: column;
     gap: 32px;
+  }
+
+  .project-description {
+    text-align: center;
   }
 
   .footer-tool-section {
@@ -591,8 +652,8 @@ align-self: stretch;
   }
 
   .work-section {
-padding: 16px 16px;
-gap: 40px;
+  padding: 16px 16px;
+  gap: 40px;
   }
 
   .work-section-title {
